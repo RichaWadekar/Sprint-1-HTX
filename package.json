@@ -1,0 +1,32 @@
+{
+  "name": "healthtelematrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:super-admin": "playwright test tests/super-admin --project=chromium",
+    "qase:suites": "node scripts/qase-fetch.js",
+    "qase:fetch": "node scripts/qase-fetch.js",
+    "report": "playwright show-report",
+    "test:clinic-admin": "playwright test tests/clinic-admin --project=chromium"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichaWadekar/HealthTeleMatrix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RichaWadekar/HealthTeleMatrix/issues"
+  },
+  "homepage": "https://github.com/RichaWadekar/HealthTeleMatrix#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "dotenv": "^18.0.4",
+    "playwright-qase-reporter": "^2.7.0"
+  }
+}

@@ -1,0 +1,17 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Env / secrets — never commit
+.env
+.env.local
+!.env.example
+
+# Qase case cache pulled by scripts/qase-fetch.js
+/qase/
+/reports/
